@@ -30,13 +30,16 @@
 
 .navbar-default .navbar-toggle {
     background-color: #1abc9c;
-    border-color: #1abc9c;
+    border-color: transparent;
     color: white;
     text-transform: uppercase;
     border-radius: 10px;
     height: 50px;
     margin: 0;
     padding: 0 15px;
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: #148f77;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -45,6 +48,11 @@
 
 .navbar-default .navbar-toggle .icon-bars {
     display: inline-block;
+}
+
+.navbar-default .navbar-toggle .menu {
+    display: inline-block;
+    padding: 14px 5px 14px 0;
 }
 
 section {
@@ -70,9 +78,10 @@ section p {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 400px;
+    margin-top: 40px;
 }
 
-section h1, section h2, section p {
+section h1, section h2 {
     margin: 40px 0;
 }
 
@@ -117,6 +126,10 @@ section:nth-of-type(even) .star {
     background-color: white;
 }
 
+#start-bootstrap {
+    padding-top: 163px;
+}
+
 #start-bootstrap img {
     max-height: 255px;
 }
@@ -153,8 +166,32 @@ section:nth-of-type(even) .star {
     color: white;
 }
 
-#portfolio .card a:hover + i {
+#portfolio .card a:hover i {
     display: block;
+}
+
+#about p {
+    text-align: left;
+}
+
+#about button {
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    border: 2px solid white;
+    transition: all 0.2s linear;
+}
+
+#about button:hover {
+    background-color: white;
+    color: #2c3e50;
+}
+
+#about button i {
+    margin-right: 10px;
 }
 
 @media (min-width: 468px) {
@@ -214,5 +251,17 @@ section:nth-of-type(even) .star {
 
     section p {
         font-size: 22px;
+    }
+
+    #start-bootstrap {
+        padding-top: 181px;
+    }
+
+    #about .col-xs-12:first-child p {
+        margin-right: 15px;
+    }
+
+    #about .col-xs-12:last-child p {
+        margin-left: 15px;
     }
 }
