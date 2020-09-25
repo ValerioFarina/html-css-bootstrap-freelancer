@@ -8,7 +8,7 @@
 }
 
 .navbar-default .navbar-brand,
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
     color: white;
 }
 
@@ -16,7 +16,7 @@
     font-size: 20px;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
     font-size: 16px;
 }
 
@@ -24,7 +24,7 @@
     color: white;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav > li > a:hover {
     color: #1abc9c;
 }
 
@@ -42,17 +42,8 @@
     background-color: #148f77;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
-}
-
-.navbar-default .navbar-toggle .icon-bars {
-    display: inline-block;
-}
-
-.navbar-default .navbar-toggle .menu {
-    display: inline-block;
-    padding: 14px 5px 14px 0;
+main {
+    padding-top: 133px;
 }
 
 section {
@@ -73,16 +64,19 @@ section h2 {
     font-size: 36px;
 }
 
-
 section p {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 400px;
-    margin-top: 40px;
+    margin: 40px 0 0 0;
 }
 
-section h1, section h2 {
+section h1 {
     margin: 40px 0;
+}
+
+section h2 {
+    margin: 0 0 40px 0;
 }
 
 section .star {
@@ -124,10 +118,6 @@ section:nth-of-type(even) .bar {
 
 section:nth-of-type(even) .star {
     background-color: white;
-}
-
-#start-bootstrap {
-    padding-top: 163px;
 }
 
 #start-bootstrap img {
@@ -174,15 +164,18 @@ section:nth-of-type(even) .star {
     text-align: left;
 }
 
-#about button {
+#about button, #contact button {
     color: white;
-    background-color: transparent;
     font-size: 20px;
     padding: 15px 30px;
     border-radius: 8px;
     margin-top: 30px;
-    border: 2px solid white;
     transition: all 0.2s linear;
+}
+
+#about button {
+    background-color: transparent;
+    border: 2px solid white;
 }
 
 #about button:hover {
@@ -192,6 +185,41 @@ section:nth-of-type(even) .star {
 
 #about button i {
     margin-right: 10px;
+}
+
+#contact form {
+    margin-top: 50px;
+}
+
+#contact input, #contact textarea {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400px;
+    color: #495057;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+#contact input:focus, #contact textarea:focus {
+    outline: none;
+}
+
+#contact button {
+    background-color: #1abc9c;
+    display: block;
+}
+
+#contact button:hover {
+    background-color: #148f77;
+}
+
+@media (min-width: 375px) {
+    main {
+        padding-top: 83px;
+    }
 }
 
 @media (min-width: 468px) {
@@ -253,8 +281,8 @@ section:nth-of-type(even) .star {
         font-size: 22px;
     }
 
-    #start-bootstrap {
-        padding-top: 181px;
+    main {
+        padding-top: 101px;
     }
 
     #about .col-xs-12:first-child p {
